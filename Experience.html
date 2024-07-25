@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TASPEDIA - Experience</title>
+     <link rel="icon" href="watermelon.png" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:ital,wght@1,700&display=swap');
+
+        body {
+            background-image: url('sya2.jpeg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+            font-family: 'Lato', sans-serif;
+            color: #5f4b32; /* Brown color */
+        }
+
+        header, main, footer {
+            background-color: rgba(255, 255, 255, 0.85);
+            padding: 20px;
+            border-radius: 15px;
+            margin: 20px auto;
+            max-width: 900px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        header {
+            text-align: center;
+        }
+
+        h1, h2 {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            color: #a67c52; /* Nude color */
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 40px;
+        }
+
+        h2 {
+            font-size: 28px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background: linear-gradient(45deg, #8b4513, #a0522d);
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #a0522d;
+            transform: scale(1.1);
+        }
+
+        .back-button {
+            display: block;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .back-button a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background: linear-gradient(45deg, #8b4513, #a0522d);
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .back-button a:hover {
+            background-color: #a0522d;
+            transform: scale(1.1);
+        }
+
+        .experience-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center; /* Centering the text */
+        }
+
+        .experience-item {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 15px;
+            width: 100%;
+            max-width: 600px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .experience-item h3 {
+            margin-top: 0;
+            font-size: 22px;
+            font-style: normal;
+            color: #5f4b32; /* Brown color */
+        }
+
+        .experience-item p {
+            margin: 5px 0;
+            font-size: 18px;
+        }
+
+        .experience-item img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            border: 2px solid #a0522d;
+        }
+
+        footer {
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        .experience-item ul {
+            list-style-type: disc;
+            margin: 10px 0 0 20px; /* Added margin to indent the list */
+            text-align: left; /* Ensuring the list is aligned to the left */
+        }
+
+        .more-content {
+            display: none;
+        }
+
+        .more-button {
+            background: none;
+            border: none;
+            color: #8b4513;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>・❥・ Tasya's Experience ・❥・</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="biodata.html">Biodata</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="back-button">
+            <a href="index.html">Back to Home</a>
+        </div>
+        <div class="experience-container">
+            <div class="experience-item">
+                <img src="KAWAD.jpeg" alt="kawad">
+                <h3>.ೃ࿐Wakil Daerah Kawad Kaki.ೃ࿐</h3>
+                <p>SMK INANAM, KOTA KINABALU</p>
+                <p>2017</p>
+                <p>Tasya engaged in an activity that promotes physical fitness, discipline, teamwork, and leadership skills, while representing her school in various events and competitions.</p>
+                <button class="more-button" onclick="toggleMoreContent(this)">Read More</button>
+                <div class="more-content">
+                    <ul>
+                        <li>Learning and practicing basic marching commands, movements, and formations.</li>
+                        <li>Donning a specific uniform that represents her school and the "Kawad Kaki" team.</li>
+                        <li>Working closely with team members to ensure coordinated and synchronized movements.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="experience-item">
+                <img src="pengawas.jpeg" alt="pengawas">
+                <h3>.ೃ࿐Kem Jati Diri Pengawas.ೃ࿐</h3>
+                <p>SMK INANAM, KOTA KINABALU</p>
+                <p>2018</p>
+                <p>Tasya developed important life skills that will help her in her role as a prefect and in her future endeavors. The camp provides a platform for enhancing leadership abilities, fostering personal growth, and building a sense of responsibility and community among school prefects.</p>
+                <button class="more-button" onclick="toggleMoreContent(this)">Read More</button>
+                <div class="more-content">
+                    <ul>
+                        <li>Attending sessions focused on leadership skills, effective communication, and conflict resolution.</li>
+                        <li>Engaging in activities that promote teamwork, trust, and cooperation among participants.</li>
+                        <li>Following a structured schedule that emphasizes discipline and time management.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="experience-item">
+                <img src="awam.jpeg" alt="awam">
+                <h3>.ೃ࿐Kem Jati Diri Kadet Pertahanan Awam.ೃ࿐</h3>
+                <p>SMK INANAM, KOTA KINABALU</p>
+                <p>2018</p>
+                <p>The camp emphasizes the importance of preparedness, leadership, discipline, and community service, preparing participants to effectively contribute to her communities in times of need.</p>
+                <button class="more-button" onclick="toggleMoreContent(this)">Read More</button>
+                <div class="more-content">
+                    <ul>
+                        <li>Learning basic first aid and CPR techniques to provide initial medical assistance in emergencies.</li>
+                        <li>Learning to use maps and compasses for navigation in unfamiliar terrain.</li>
+                        <li>Working through problem-solving exercises that test critical thinking and decision-making under pressure.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="experience-item">
+                <img src="cemerlang.jpeg" alt="Volunteer">
+                <h3>.ೃ࿐Program Motivasi Kecemerlangan Pelajar.ೃ࿐</h3>
+                <p>SMK INANAM, KOTA KINABALU</p>
+                <p>2019</p>
+                <p>Tasya is likely developing a strong foundation for academic excellence and personal growth. The program aims to inspire students, equip them with essential skills, and motivate them to achieve their full potential.</p>
+                <button class="more-button" onclick="toggleMoreContent(this)">Read More</button>
+                <div class="more-content">
+                    <ul>
+                        <li>Listening to motivational speakers who share their experiences and strategies for achieving excellence.</li>
+                        <li>Learning techniques to manage stress, such as mindfulness, meditation, and relaxation exercises.</li>
+                        <li>Learning about various study techniques, such as active reading, note-taking, and time management.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Created By Shamira. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleMoreContent(button) {
+            const moreContent = button.nextElementSibling;
+            const isVisible = moreContent.style.display === 'block';
+
+            if (isVisible) {
+                moreContent.style.display = 'none';
+                button.textContent = 'Read More';
+            } else {
+                moreContent.style.display = 'block';
+                button.textContent = 'Read Less';
+            }
+        }
+    </script>
+</body>
+</html>

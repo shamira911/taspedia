@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TASPEDIA - Gallery</title>
+     <link rel="icon" href="watermelon.png" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:ital,wght@1,700&display=swap');
+
+        body {
+            background-image: url('sya2.jpeg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+            font-family: 'Lato', sans-serif;
+            color: #5f4b32; /* Brown color */
+        }
+
+        header, main, footer {
+            background-color: rgba(255, 255, 255, 0.85);
+            padding: 20px;
+            border-radius: 15px;
+            margin: 20px auto;
+            max-width: 900px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        header {
+            text-align: center;
+        }
+
+        h1, h2 {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            color: #a67c52; /* Nude color */
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 40px;
+        }
+
+        h2 {
+            font-size: 28px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background: linear-gradient(45deg, #8b4513, #a0522d);
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #a0522d;
+            transform: scale(1.1);
+        }
+
+        .back-button {
+            display: block;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .back-button a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background: linear-gradient(45deg, #8b4513, #a0522d);
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .back-button a:hover {
+            background-color: #a0522d;
+            transform: scale(1.1);
+        }
+
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .gallery-item {
+            position: relative;
+            width: calc(33% - 20px);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-10px);
+        }
+
+        .gallery-item img,
+        .gallery-item video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item img:hover,
+        .gallery-item video:hover {
+            transform: scale(1.05);
+        }
+
+        .gallery-item .info {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.6);
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            font-size: 16px;
+            transition: max-height 0.3s ease, opacity 0.3s ease;
+            max-height: 0;
+            opacity: 0;
+            overflow: hidden;
+        }
+
+        .gallery-item:hover .info {
+            max-height: 100px;
+            opacity: 1;
+        }
+
+        footer {
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            .gallery-item {
+                width: calc(50% - 20px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gallery-item {
+                width: 100%;
+            }
+        }
+    </style>
+    <!-- Lightbox CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+</head>
+<body>
+    <header>
+        <h1>・❥・ Tasya's Gallery ・❥・</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="biodata.html">Biodata</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="back-button">
+            <a href="index.html">Back to Home</a>
+        </div>
+        <div class="gallery-container">
+            <a href="s4.jpeg" class="gallery-item" data-lightbox="gallery" data-title="selfies 1">
+                <img src="s4.jpeg" alt="Photo 1">
+                <div class="info">It is literally unfair how beautiful she is.</div>
+            </a>
+            <a href="s5.jpeg" class="gallery-item" data-lightbox="gallery" data-title="selfies 2">
+                <img src="s5.jpeg" alt="Photo 2">
+                <div class="info">She is sooooo cute !</div>
+            </a>
+            <a href="s6.jpeg" class= "gallery-item" data-lightbox="gallery" data-title="selfies 3">
+                <img src="s6.jpeg" alt="Photo 3">
+                <div class="info">She have an amazing sense of humor.</div>
+            </a>
+            <!-- Video GIF Example -->
+            <a href="v1.mp4" class="gallery-item" data-lightbox="gallery" data-title="Video GIF 1">
+                <video autoplay loop muted>
+                    <source src="v1.mp4" type="video/mp4">
+                </video>
+                <div class="info">Tasya's random video</div>
+            <a href="s34.jpeg" class="gallery-item" data-lightbox="gallery" data-title="selfies 1">
+                <img src="s34.jpeg" alt="Photo 1">
+                <div class="info">She loves nature!.</div>
+            </a>
+            <a href="s38.jpeg" class="gallery-item" data-lightbox="gallery" data-title="selfies 2">
+                <img src="s38.jpeg" alt="Photo 2">
+                <div class="info">She believed she could, so she did shine in the dark.</div>
+            </a>
+            <a href="s37.jpeg" class="gallery-item" data-lightbox="gallery" data-title="selfies 3">
+                <img src="s37.jpeg" alt="Photo 3">
+                <div class="info">Fashion is art and she is the canvas!.</div>
+            </a>
+            <a href="s36.jpeg" class="gallery-item" data-lightbox="gallery" data-title="selfies 1">
+                <img src="s36.jpeg" alt="Photo 1">
+                <div class="info">Style is a way to say who she is without having to speak.</div>
+            </a>
+            <a href="s35.jpeg" class="gallery-item" data-lightbox="gallery" data-title="selfies 2">
+                <img src="s35.jpeg" alt="Photo 2">
+                <div class="info">She got the sunslap</div>
+            </a>
+            <a href="s33.jpeg" class="gallery-item" data-lightbox="gallery" data-title="selfies 3">
+                <img src="s33.jpeg" alt="Photo 3">
+                <div class="info">Oh slayy~</div>
+            </a>
+            <a href="tasya3.jpeg" class="gallery-item" data-lightbox="gallery" data-title="selfies 4">
+                <img src="tasya3.jpeg" alt="Photo 4">
+                <div class="info">So cute for what ?</div>
+            </a>
+            <a href="tasyial1.jpeg" class="gallery-item" data-lightbox="gallery" data-title="selfies 5.">
+                <img src="tasyial1.jpeg" alt="Photo 5">
+                <div class="info">She's just too perfect</div>
+            </a>
+            <a href="s3.jpeg" class="gallery-item" data-lightbox="gallery" data-title="selfies 6">
+                <img src="s3.jpeg" alt="Photo 6">
+                <div class="info">Photogenic girl!</div>
+            </a>
+            <a href="smoltasya.jpeg" class="gallery-item" data-lightbox="gallery" data-title="selfies 7.">
+                <img src="smoltasya.jpeg" alt="Photo 6">
+                <div class="info">Smol Tasya here <3</div>
+            </a>
+
+            <a href="s7.jpeg" class="gallery-item" data-lightbox="gallery" data-title="selfies 8">
+                <img src="s7.jpeg" alt="Photo 6">
+                <div class="info">Smol 2.0 <3</div>
+            </a>
+            <a href="s8.jpeg" class="gallery-item" data-lightbox="gallery" data-title="Selfies 9">
+                <img src="s8.jpeg" alt="Photo 6">
+                <div class="info">Smol Tasya 3.0 <3</div>
+            </a>
+            <a href="s9.jpeg" class="gallery-item" data-lightbox="gallery" data-title="her Syurga">
+                <img src="s9.jpeg" alt="Photo 6">
+                <div class="info">Her Cinta Abadi (her syurga)</div>
+            </a>
+            <a href="s12.jpeg" class="gallery-item" data-lightbox="gallery" data-title="family">
+                <img src="s12.jpeg" alt="Photo 6">
+                <div class="info">Her little brother, Syahmi!</div>
+            </a>
+            <a href="s11.jpeg" class="gallery-item" data-lightbox="gallery" data-title="family">
+                <img src="s11.jpeg" alt="Photo 6">
+                <div class="info">Her Family!</div>
+            </a>
+            <a href="s14.jpeg" class="gallery-item" data-lightbox="gallery" data-title="sister">
+                <img src="s14.jpeg" alt="Photo 6">
+                <div class="info">Her beautiful little sister, Qisya.</div>
+            </a>
+            <a href="s15.jpeg" class="gallery-item" data-lightbox="gallery" data-title="Brother">
+                <img src="s15.jpeg" alt="Photo 6">
+                <div class="info">Her second little brother, Aniq.</div>
+            </a>
+            <a href="s16.jpeg" class="gallery-item" data-lightbox="gallery" data-title="Tasya">
+                <img src="s16.jpeg" alt="Photo 6">
+                <div class="info">Another little Tasya<3</div>
+            </a>
+            <a href="s17.jpeg" class="gallery-item" data-lightbox="gallery" data-title="Tasya">
+                <img src="s17.jpeg" alt="Photo 6">
+                <div class="info">This is Tasya's best friend, Nadirah !</div>
+            </a>
+            <a href="s19.jpeg" class="gallery-item" data-lightbox="gallery" data-title="Tasya">
+                <img src="s19.jpeg" alt="Photo 6">
+                <div class="info">Her high school buddies.</div>
+            </a>
+            <a href="s21.jpeg" class="gallery-item" data-lightbox="gallery" data-title="Tasya">
+                <img src="s21.jpeg" alt="Photo 6">
+                <div class="info">Her High School Buddies.</div>
+            </a>
+            <a href="s22.jpeg" class="gallery-item" data-lightbox="gallery" data-title="Tasya">
+                <img src="s22.jpeg" alt="Photo 6">
+                <div class="info">She look so young here!</div>
+            </a>
+            <a href="s25.jpeg" class="gallery-item" data-lightbox="gallery" data-title="Tasya">
+                <img src="s25.jpeg" alt="Photo 6">
+                <div class="info">Tasya and her friends hit by sun light.</div>
+            </a>
+            <a href="s26.jpeg" class="gallery-item" data-lightbox="gallery" data-title="Tasya">
+                <img src="s26.jpeg" alt="Photo 6">
+                <div class="info"> Her ugliest era.</div>
+            </a>
+            <a href="s18.jpeg" class="gallery-item" data-lightbox="gallery" data-title="Tasya">
+                <img src="s18.jpeg" alt="Photo 6">
+                <div class="info">Her beautiful trio, Mira & Pina.</div>
+            </a>
+            <!-- Video GIF Example -->
+            <a href="v3.mp4" class="gallery-item" data-lightbox="gallery" data-title="Video GIF 1">
+                <video autoplay loop muted>
+                    <source src="v3.mp4" type="video/mp4">
+                </video>
+                <div class="info">She's very playful right?</div>
+            </a>
+            <a href="s27.jpeg" class="gallery-item" data-lightbox="gallery" data-title="Tasya">
+                <img src="s27.jpeg" alt="Photo 6">
+                <div class="info">Love Hate friendship are their love language.</div>
+            </a>
+            <a href="s29.jpeg" class="gallery-item" data-lightbox="gallery" data-title="Tasya">
+                <img src="s29.jpeg" alt="Photo 6">
+                <div class="info">Being pretty with best friends is another level of confidents.</div>
+            </a>
+            <a href="s30.jpeg" class="gallery-item" data-lightbox="gallery" data-title="Tasya">
+                <img src="s30.jpeg" alt="Photo 6">
+                <div class="info">An honour to be in the Dean's list together</div>
+            </a>
+                        <a href="v2.mp4" class="gallery-item" data-lightbox="gallery" data-title="Video GIF 2">
+                <video autoplay loop muted>
+                    <source src="v2.mp4" type="video/mp4">
+                </video>
+                <div class="info">She really enjoyed her quality's time with her besties</div>
+            </a>
+            <a href="s31.jpeg" class="gallery-item" data-lightbox="gallery" data-title="Tasya">
+                <img src="s31.jpeg" alt="Photo 6">
+                <div class="info">Again, Tasya and her best friend got the 1st Place of the best Video Presentation!</div>
+            </a>
+            <a href="s32.jpeg" class="gallery-item" data-lightbox="gallery" data-title="Tasya">
+                <img src="s32.jpeg" alt="Photo 6">
+                <div class="info">Tasya won the best outfit at masquerade UiTM informs dinner!</div>
+            </a>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Created By Shamira. All rights reserved.</p>
+    </footer>
+
+    <!-- Lightbox JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+</body>
+</html>
